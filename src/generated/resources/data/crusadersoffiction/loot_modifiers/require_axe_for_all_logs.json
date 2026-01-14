@@ -1,9 +1,0 @@
-{
-  "type": "crusadersoffiction:require_tool",
-  "conditions": [
-    {
-      "chance": 1.0,
-      "condition": "minecraft:random_chance"
-    }
-  ]
-}

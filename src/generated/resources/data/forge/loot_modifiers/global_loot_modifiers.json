@@ -1,9 +1,8 @@
 {
   "entries": [
-    "crusadersoffiction:rock_from_grass",
-    "crusadersoffiction:fiber_from_grass",
-    "crusadersoffiction:soulessence_from_zombie",
-    "crusadersoffiction:require_axe_for_all_logs"
+    "crusadersprogressionreimagined:rock_from_grass",
+    "crusadersprogressionreimagined:fiber_from_grass",
+    "crusadersprogressionreimagined:require_axe_for_all_logs"
   ],
   "replace": false
 }

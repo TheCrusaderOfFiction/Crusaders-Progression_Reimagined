@@ -1,0 +1,30 @@
+{
+
+  "item.crusadersprogressionreimagined.copper_hammer": "Copper Hammer",
+  "item.crusadersprogressionreimagined.iron_hammer": "Iron Hammer",
+
+  "item.crusadersprogressionreimagined.iron_sword_blade": "Iron Sword Blade",
+  "item.crusadersprogressionreimagined.iron_hoe_blade": "Iron Hoe Blade",
+  "item.crusadersprogressionreimagined.iron_shovel_blade": "Iron Shovel Blade",
+  "item.crusadersprogressionreimagined.iron_axe_head": "Iron Axe Head",
+  "item.crusadersprogressionreimagined.iron_pickaxe_head": "Iron Pickaxe Head",
+
+  "item.crusadersprogressionreimagined.diamond_sword_blade": "Diamond Sword Blade",
+  "item.crusadersprogressionreimagined.diamond_hoe_blade": "Diamond Hoe Blade",
+  "item.crusadersprogressionreimagined.diamond_shovel_blade": "Diamond Shovel Blade",
+  "item.crusadersprogressionreimagined.diamond_axe_head": "Diamond Axe Head",
+  "item.crusadersprogressionreimagined.diamond_pickaxe_head": "Diamond Pickaxe Head",
+
+  "item.crusadersprogressionreimagined.rock": "Rock",
+  "item.crusadersprogressionreimagined.rock_hatchet": "Rock Hatchet",
+  "item.crusadersprogressionreimagined.fiber": "fiber",
+
+  "block.crusadersprogressionreimagined.wysterium_ore": "Wysterium Ore",
+  "block.crusadersprogressionreimagined.wysterium_block": "Wysterium Block",
+  "block.crusadersprogressionreimagined.forge": "Forge",
+  "block.crusadersprogressionreimagined.charged_coal_block": "Charged Coal Block",
+
+  "creativetab.crusader_mod": "Crusaders Mod",
+  "creativetab.crusader_progress": "Crusaders: Progress Reimagined"
+
+}

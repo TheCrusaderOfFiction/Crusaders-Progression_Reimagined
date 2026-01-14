@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "crusadersprogressionreimagined:block/forge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "crusadersprogressionreimagined:block/forge"
+    },
+    "facing=south": {
+      "model": "crusadersprogressionreimagined:block/forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crusadersprogressionreimagined:block/forge",
+      "y": 270
+    }
+  }
+}

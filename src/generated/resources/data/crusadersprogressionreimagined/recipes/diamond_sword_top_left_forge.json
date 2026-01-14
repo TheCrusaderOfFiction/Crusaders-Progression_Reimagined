@@ -1,0 +1,27 @@
+{
+  "type": "crusadersprogressionreimagined:forge",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {},
+    {},
+    {
+      "item": "minecraft:diamond"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "item": "crusadersprogressionreimagined:charged_coal_block"
+    },
+    {
+      "item": "crusadersprogressionreimagined:iron_hammer"
+    }
+  ],
+  "output": {
+    "item": "crusadersprogressionreimagined:diamond_sword_blade"
+  }
+}

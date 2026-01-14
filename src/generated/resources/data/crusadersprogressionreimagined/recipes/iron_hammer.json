@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " CC",
+    " SC",
+    "S  "
+  ],
+  "result": {
+    "count": 5,
+    "item": "crusadersprogressionreimagined:iron_hammer"
+  },
+  "show_notification": true
+}

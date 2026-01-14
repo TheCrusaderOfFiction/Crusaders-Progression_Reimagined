@@ -1,0 +1,32 @@
+package net.wolfygames7237.crusadersprogressionreimagined.util;
+
+import net.wolfygames7237.crusadersprogressionreimagined.CrusadersProgressionReimagined;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+
+public class ModTags {
+    public static class Blocks {
+
+        public static final TagKey<Block> NEEDS_WYSTERIUM_TOOL = tag("needs_wysterium_tool");
+        public static final TagKey<Block> NEEDS_WOOD_TOOL = tag("needs_wood_tool");
+        public static final TagKey<Block> NEEDS_COPPER_TOOL = tag("needs_copper_tool");
+
+        private static TagKey<Block> tag(String name) {
+            return BlockTags.create(new ResourceLocation(CrusadersProgressionReimagined.MOD_ID, name));
+        }
+
+        public static class Items {
+
+            public static final TagKey<Item> HAMMER = tag("hammer");
+
+            private static TagKey<Item> tag(String name) {
+                return ItemTags.create(new ResourceLocation(CrusadersProgressionReimagined.MOD_ID, name));
+            }
+
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "crusadersprogressionreimagined:item/rock_hatchet"
+  }
+}

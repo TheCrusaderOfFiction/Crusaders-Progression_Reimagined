@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "crusadersprogressionreimagined:fiber"
+    },
+    "R": {
+      "item": "crusadersprogressionreimagined:rock"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "FR",
+    "S "
+  ],
+  "result": {
+    "item": "crusadersprogressionreimagined:rock_hatchet"
+  },
+  "show_notification": true
+}
