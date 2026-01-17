@@ -13,9 +13,9 @@ import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.event.AddReloadListenerEvent;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.network.NetworkRegistry;
-import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.wolfygames7237.crusadersprogressionreimagined.Item.ModCreativeModeTabs;
 import net.wolfygames7237.crusadersprogressionreimagined.Item.ModItem;
@@ -32,6 +32,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.wolfygames7237.crusadersprogressionreimagined.compat.DynamicTreesCompat;
 import net.wolfygames7237.crusadersprogressionreimagined.entity.ModBlockEntities;
 import net.wolfygames7237.crusadersprogressionreimagined.loot.ModLootModifiers;
 import net.wolfygames7237.crusadersprogressionreimagined.recipe.ModRecipes;
@@ -83,6 +84,10 @@ public class CrusadersProgressionReimagined
 
     public CrusadersProgressionReimagined(FMLJavaModLoadingContext context)
     {
+        ModLoadingContext.get().registerConfig(
+                ModConfig.Type.COMMON,
+                CrusadersImaginedConfig.SPEC
+        );
         IEventBus modEventBus = context.getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
@@ -92,13 +97,18 @@ public class CrusadersProgressionReimagined
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
+        if (ModList.get().isLoaded("dynamictrees")) {
+            // Register to the FORGE bus, not the MOD bus
+            MinecraftForge.EVENT_BUS.register(new DynamicTreesCompat());
+        }
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
 
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
     private void commonSetup(final FMLCommonSetupEvent event)
     {

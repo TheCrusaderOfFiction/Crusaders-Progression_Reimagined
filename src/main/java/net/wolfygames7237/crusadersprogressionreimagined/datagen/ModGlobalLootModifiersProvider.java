@@ -1,14 +1,23 @@
 package net.wolfygames7237.crusadersprogressionreimagined.datagen;
 
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.*;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import net.minecraftforge.common.loot.LootTableIdCondition;
+import net.wolfygames7237.crusadersprogressionreimagined.CrusadersImaginedConfig;
 import net.wolfygames7237.crusadersprogressionreimagined.CrusadersProgressionReimagined;
 import net.wolfygames7237.crusadersprogressionreimagined.Item.ModItem;
 import net.wolfygames7237.crusadersprogressionreimagined.loot.AddItemModifier;
 import net.wolfygames7237.crusadersprogressionreimagined.loot.RequireToolModifier;
+import org.jetbrains.annotations.NotNull;
 
 public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     public ModGlobalLootModifiersProvider(PackOutput output) {
@@ -32,4 +41,5 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootItemRandomChanceCondition.randomChance(1.0f).build()
         }));
     }
+
 }

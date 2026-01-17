@@ -19,26 +19,26 @@ public class ModToolTiers {
     public static final Tier MOD_WOOD = TierSortingRegistry.registerTier(
             new ForgeTier(1, 59, 2.0F, 0.0F, 15,
                     ModTags.Blocks.NEEDS_WOOD_TOOL, () -> Ingredient.of(ItemTags.PLANKS)),
-            new ResourceLocation("crusadersoffiction", "wood"),
+            new ResourceLocation("crusadersprogressionreimagined", "wood"),
             List.of(), List.of());
     public static final Tier MOD_STONE = TierSortingRegistry.registerTier(
             new ForgeTier(2, 250, 6.0F, 2.0F, 14,
                     BlockTags.NEEDS_STONE_TOOL, () -> Ingredient.of(ItemTags.STONE_TOOL_MATERIALS)),
-            new ResourceLocation("crusadersoffiction", "stone"),
+            new ResourceLocation("crusadersprogressionreimagined", "stone"),
             List.of(Tiers.WOOD), List.of());
     public static final Tier COPPER = TierSortingRegistry.registerTier(
             new ForgeTier(3, 59, 2.0F, 0.0F, 15,
                     ModTags.Blocks.NEEDS_COPPER_TOOL, () -> Ingredient.of(ItemTags.PLANKS)),
-            new ResourceLocation("crusadersoffiction", "copper"),
+            new ResourceLocation("crusadersprogressionreimagined", "copper"),
             List.of(Tiers.STONE), List.of());
     public static final Tier MOD_IRON = TierSortingRegistry.registerTier(
             new ForgeTier(4, 250, 6.0F, 2.0F, 14,
                     BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(Items.IRON_INGOT)),
-            new ResourceLocation("crusadersoffiction", "iron"),
+            new ResourceLocation("crusadersprogressionreimagined", "iron"),
             List.of(ModToolTiers.COPPER), List.of());
     public static final Tier MOD_DIAMOND = TierSortingRegistry.registerTier(
             new ForgeTier(5, 1561, 8.0F, 3.0F, 10,
                     BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(Items.DIAMOND)),
-            new ResourceLocation("crusadersoffiction", "diamond"),
+            new ResourceLocation("crusadersprogressionreimagined", "diamond"),
             List.of(Tiers.IRON), List.of());
 }

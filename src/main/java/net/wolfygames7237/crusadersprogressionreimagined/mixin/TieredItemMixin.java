@@ -13,14 +13,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(TieredItem.class)
 public abstract class TieredItemMixin {
 
-    /**
-     * SRG Name: m_43314_ (Standard Mojang/Parchment name: getTier)
-     */
     @Inject(method = "getTier", at = @At("HEAD"), cancellable = true, remap = true)
     private void onGetTier(CallbackInfoReturnable<Tier> cir) {
         TieredItem item = (TieredItem) (Object) this;
 
-        // Use the Item instance to check which tool it is
         if (item == Items.STONE_PICKAXE || item == Items.STONE_AXE || item == Items.STONE_SHOVEL || item == Items.STONE_HOE) {
             cir.setReturnValue(ModToolTiers.MOD_STONE);
         } else if (item == Items.IRON_PICKAXE || item == Items.IRON_AXE || item == Items.IRON_SHOVEL || item == Items.IRON_HOE) {

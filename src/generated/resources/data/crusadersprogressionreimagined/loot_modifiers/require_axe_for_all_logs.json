@@ -1,5 +1,5 @@
 {
-  "type": "crusadersprogressionreimagined:require_tool",
+  "type": "crusadersprogressionreimagined:require_axe",
   "conditions": [
     {
       "chance": 1.0,
