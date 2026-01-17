@@ -1,0 +1,9 @@
+// 1.20.1	2026-01-15T08:01:25.3014276	Tags for minecraft:block mod id crusadersprogressionreimagined
+40f6588626995424e9707c8a35c5bd299e86a0a1 data/crusadersprogressionreimagined/tags/blocks/needs_copper_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/crusadersprogressionreimagined/tags/blocks/needs_wood_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+b147fcff5c0b4d72df1cb7809b063b2562180832 data/minecraft/tags/blocks/mineable/axe.json
+cfab2ab481bf476a645d326b87627918009b9e50 data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+80c41d539f3bd427e359cadbec3cf34ab30bfe54 data/minecraft/tags/blocks/needs_iron_tool.json
+1fe0926447430c800e5585bf4b0efddb259f097c data/minecraft/tags/blocks/needs_stone_tool.json

@@ -1,0 +1,5 @@
+// 1.20.1	2026-01-16T21:52:37.86635	Global Loot Modifiers : crusadersprogressionreimagined
+003c216a90f4e38ba4c96215a47d8f3e0e9c95f3 data/crusadersprogressionreimagined/loot_modifiers/fiber_from_grass.json
+fa97bcfff19ec20d8b2306f48ee97c7527c704fa data/crusadersprogressionreimagined/loot_modifiers/require_axe_for_all_logs.json
+50713bc719bb623820e6c1ede968c8b9ea8d01ab data/crusadersprogressionreimagined/loot_modifiers/rock_from_grass.json
+c0dc10a5ca81d1885a010684d59c0feec6af64c5 data/forge/loot_modifiers/global_loot_modifiers.json
